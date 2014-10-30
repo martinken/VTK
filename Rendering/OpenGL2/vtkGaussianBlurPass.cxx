@@ -171,6 +171,9 @@ void vtkGaussianBlurPass::Render(const vtkRenderState *s)
     width=size[0];
     height=size[1];
 
+
+    // I suggest set this to 100 for debugging, makes some errors
+    // much easier to find
     const int extraPixels=2; // two on each side, as the kernel is 5x5
 
     int w=width+extraPixels*2;
@@ -407,7 +410,7 @@ void vtkGaussianBlurPass::Render(const vtkRenderState *s)
 
     this->Pass2->CopyToFrameBuffer(extraPixels, extraPixels,
                                   w-1-extraPixels,h-1-extraPixels,
-                                  0,0, renWin,
+                                  0,0, width, height,
                                   this->BlurProgram->Program, &this->BlurProgram->vao);
 
     this->Pass2->Deactivate();
