@@ -68,7 +68,7 @@ int TestImageDataLIC2D(int argc, char* argv[])
   new_argv[argc++] = vtksys::SystemTools::DuplicateString(filename.c_str());
   new_argv[argc++] = vtksys::SystemTools::DuplicateString(noise.c_str());
   new_argv[argc++] = vtksys::SystemTools::DuplicateString("--mag=5");
-  new_argv[argc++] = vtksys::SystemTools::DuplicateString("--partitions=5");
+ // new_argv[argc++] = vtksys::SystemTools::DuplicateString("--partitions=5");
   int status = ImageDataLIC2D(argc, new_argv);
   for (int kk=0; kk < argc; kk++)
     {

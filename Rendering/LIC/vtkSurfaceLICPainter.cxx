@@ -84,7 +84,7 @@ typedef vtkLineIntegralConvolution2D vtkLIC2D;
 #endif
 
 // write intermediate results to disk for debugging
-#define vtkSurfaceLICPainterDEBUG 0
+#define vtkSurfaceLICPainterDEBUG 3
 #if vtkSurfaceLICPainterDEBUG >= 2
 #include "vtkTextureIO.h"
 #include <sstream>

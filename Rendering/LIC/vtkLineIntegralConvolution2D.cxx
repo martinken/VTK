@@ -59,7 +59,7 @@ using std::string;
 
 // if defined write intermediate results to disk
 // for debugging. (1 results, 2 +steps, 3 +fbo status )
-#define vtkLineIntegralConvolution2DDEBUG 0
+#define vtkLineIntegralConvolution2DDEBUG 3
 #if (vtkLineIntegralConvolution2DDEBUG >= 1)
 #include "vtkTextureIO.h"
 #include <sstream>

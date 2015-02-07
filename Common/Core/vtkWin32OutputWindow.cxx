@@ -73,6 +73,7 @@ vtkWin32OutputWindow::~vtkWin32OutputWindow()
 //
 void vtkWin32OutputWindow::DisplayText(const char* someText)
 {
+  //abort();
   if(!someText)
     {
     return;
