@@ -21,6 +21,7 @@ vtk_add_test_cxx(${vtk-module}CxxTests tests
   TestTextActorDepthPeeling.cxx
   TestTextActor3DAlphaBlending.cxx
   TestTextActor3DDepthPeeling.cxx
+  TestTextMapper.cxx
   )
 
 if(MATPLOTLIB_FOUND)
